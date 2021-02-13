@@ -6,15 +6,21 @@
         GridLayout:
             cols:2
             Label:
+                font_size:14
                 id:usernamelabel
                 text:"User Name"
             TextInput:
                 multiline:False
             Label:
+                font_size:14
                 id:emaillabel
                 text:"Email"
             TextInput:
                 multiline:False
         Button:
+            id:generate
             text:"Generate Password"
-    
+            background_color:("#008cff")
+
+<Generate>:
+    on_release:root.press()
